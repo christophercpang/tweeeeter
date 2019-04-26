@@ -17,7 +17,7 @@ export default class MSTRootComponent extends Component {
   render() {
     return (
       <Provider {...rootStore}>
-        <MSTTweeeter header={"MST Tweeeter"} history={this.props.history} />
+        <MSTTweeeter header={"MST Tweeeter"} />
       </Provider>
     );
   }

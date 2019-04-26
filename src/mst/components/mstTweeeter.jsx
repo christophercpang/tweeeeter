@@ -37,10 +37,11 @@ export default class MSTTweeeter extends Component {
       <Grid>
         <a href="/" className="red">
           <h1>{this.props.header}</h1>
+          <Button onClick={() => {this.props.history.push("/redux")}}>
+            To Redux!
+          </Button>
         </a>
-        <Button onClick={() => {this.props.history.push("/redux")}}>
-          To Redux!
-        </Button>
+
 
         <br />
         <MSTTweetInput />
