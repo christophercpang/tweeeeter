@@ -33,12 +33,15 @@ export default class MSTTweeeter extends Component {
 
   render() {
     const { isFetching } = this.props.tweetStore;
-
     return (
       <Grid>
         <a href="/" className="red">
-          <h1>MST Tweeeter</h1>
+          <h1>{this.props.header}</h1>
         </a>
+        <Button onClick={() => {this.props.history.push("/redux")}}>
+          To Redux!
+        </Button>
+
         <br />
         <MSTTweetInput />
         <hr />
